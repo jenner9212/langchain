@@ -34,14 +34,14 @@
 9. conversation에 찾고 싶은 내용을 넣어서 gemini의 결과값을 반환합니다.
 
 ## Module
--`main`: 애플리케이션의 메인 실행 흐름을 제어합니다.
--`gemini` : gemini API를 호출하고, response를 받는 역할을 합니다.
--`vector-store` : RAG를 구축하기 위해서, 텍스트 데이터를 Split하고 Vector DB에 store하는 역할을 합니다.
--`retriever`: Vector DB에서 사용자 입력과 연관된 Knowledge를 찾는 검색하는 역할을 합니다.
--`crawler` : KB를 구축하는데 필요한 문서 데이터를 수집하는 역할을 합니다.
--`chat` : user input과 LLM answer를 기반으로 답변을 어떻게 생성할지 정하는 역할을 합니다.
--`sql` : sqlite나 MySQL을 사용하기 위해서 RDBMS를 연동하고, SQL을 처리하는 역할을 합니다. -> 사용X
--`logger` : chat이 실행될 때마다 User question 입력값, gemini response값, 시간을 저장합니다.
+`main`: 애플리케이션의 메인 실행 흐름을 제어합니다.   
+`gemini` : gemini API를 호출하고, response를 받는 역할을 합니다.   
+`vector-store` : RAG를 구축하기 위해서, 텍스트 데이터를 Split하고 Vector DB에 store하는 역할을 합니다.   
+`retriever`: Vector DB에서 사용자 입력과 연관된 Knowledge를 찾는 검색하는 역할을 합니다.   
+`crawler` : KB를 구축하는데 필요한 문서 데이터를 수집하는 역할을 합니다.   
+`chat` : user input과 LLM answer를 기반으로 답변을 어떻게 생성할지 정하는 역할을 합니다.   
+`sql` : sqlite나 MySQL을 사용하기 위해서 RDBMS를 연동하고, SQL을 처리하는 역할을 합니다. -> 사용X   
+`logger` : chat이 실행될 때마다 User question 입력값, gemini response값, 시간을 저장합니다.   
 
 ## Project explain
 ![image](https://github.com/jenner9212/langchain/assets/35947676/75a24a25-ab1f-4375-a67a-59b82ec9a2d0)
